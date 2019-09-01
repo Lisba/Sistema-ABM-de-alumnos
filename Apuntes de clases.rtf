@@ -1,0 +1,463 @@
+{\rtf1\fbidis\ansi\ansicpg1252\deff0\nouicompat\deflang11274{\fonttbl{\f0\fswiss\fprq2\fcharset0 Calibri;}{\f1\fnil\fcharset1 Segoe UI Emoji;}{\f2\fnil\fcharset0 Calibri;}{\f3\fmodern Lucida Console;}{\f4\fswiss\fprq2 Calibri;}}
+{\colortbl ;\red0\green191\blue0;\red191\green0\blue191;\red191\green191\blue0;}
+{\*\generator Riched20 10.0.17134}\viewkind4\uc1 
+\pard\widctlpar\sl240\slmult1\b\f0\fs22 Clase 01 - 13/11/2018\b0\par
+\par
+\par
+
+\pard\sl240\slmult1\'bfQu\'e9 es un algoritmo?\par
+Un algoritmo es una serie de instrucciones que deben cumplir las siguientes condiciones:\par
+\par
+Ser ordenadas: Al igual que en matem\'e1ticas no es lo mismo hacer( 2 + 2 ) * 3 que 2 + ( 2 * 3), en programaci\'f3n el orden tambi\'e9n es muy importante para que nuestro c\'f3digo funcione correctamente.\par
+Estar bien definidas: Las instrucciones tienen que ser claras y estar escritas en el lenguaje que entiende nuestro navegador que en nuestro caso es JavaScript.\par
+Ser finitas: Si nuestras instrucciones no tiene un punto de corte o un fin, nuestro programa va a entrar en lo que se conoce como un loop y nunca va a terminar tildando el navegador.\par
+Las partes principales de un algoritmo son:\par
+\par
+Datos de entrada: Son los datos necesarios que el algoritmo necesita para ser ejecutado.\par
+Proceso: Es la secuencia de pasos para ejecutar el algoritmo.\par
+Datos de salida: Son los datos obtenidos despu\'e9s de la ejecuci\'f3n del algoritmo.\par
+Nota: Tanto los datos de entrada como de salida no son obligatorios para que sea un algoritmo.\par
+\par
+Algoritmo de un caf\'e9 \f1\u9749?\u-497?\f0\par
+La idea es tener un ejemplo mental de un algoritmo y sus partes, noten que ac\'e1 tenemos los ingredientes (elementos de entrada), la preparaci\'f3n del caf\'e9 (proceso) y un resultado final que es la taza de caf\'e9 lista (elementos de salida). En la mayor\'eda de los ejercicios que hagamos la estructura vas a ser la misma, por lo cual es bueno tener esto en mente.\par
+\par
+Ingredientes (Datos de entrada)\par
+Caf\'e9 250 ml.\par
+Az\'facar 3 cdas.\par
+Una taza caf\'e9.\par
+\par
+Preparaci\'f3n (Proceso)\par
+Servir el caf\'e9 en la taza hasta que la misma este completa.\par
+Agrega el az\'facar en la taza.\par
+Revolver hasta disolver el az\'facar.\par
+\par
+Resultado (Datos de salida)\par
+Un taza de un buen caf\'e9!\par
+\par
+\f2\lang10\par
+Javascript:\par
+\par
+document.write() escribir en el html\par
+console.log() escribir en la consola\par
+\par
+tipos de variables:\par
+1) number: 9.\par
+2) string: "texto".\par
+3) array: [1, 2, 3, 4, 5].\par
+4) boolean: true / false.\par
+5) object:\par
+6) null: nulo \par
+7) undefined: indefinido\par
+\par
+Para concatenar de forma corta: `$\{\}`\par
+\par
+prompt para abrir ventana de navegador solicitando datos inputhn \par
+parseInt para convertir variables de string a number.\par
+\par
+String template `Los numeros uno y dos son $\{numero1 + numero2\} unicamente` para introducir codigo javascript dentro de una sola linea, sirve para concatenar valores en una sola linea.\par
+\par
+
+\pard\nowidctlpar\sl276\slmult1\f0 Tipos de datos:\par
+\par
+String: son cadenas de texto por lo tanto van entre comillas.\par
+Number: numeros. No van entre comillas.\par
+Boolean: True o False\par
+Objects: \par
+Undefined: indefinido. Es el momento en el que la varible existe pero no tienen un valor.\par
+Null: nulo.\f2\par
+
+\pard\sl240\slmult1\par
+\par
+\b clase 02 - 15/11/2018\par
+\b0\par
+Control de flujo:\par
+\par
+
+\pard\nowidctlpar\sl276\slmult1\f0 Operadores (Son los que nos van a permitir hacer cosas m\'e1s complejas):\par
+\par
+Asignaci\'f3n (=): Sirve para asignar un valor a una variable.\par
+Comparacion (==): Sirve para comparar dos datos, ejem: 2 == 2 (string con number).\par
+Super Comparaci\'f3n (===): Compara valor y tipo de dato (solo strings o solo numbers).\par
+Distinto (!=): Te dice si dos valores son diferentes.\par
+Super Distinto (!==): Compara valor y tipo de dato.\par
+Suma (+), Resta (-), Multiplicaci\'f3n (*), Division (/) y el M\'f3dulo (%). Me da el resto de la divisio\par
+Mayor (>) Menor (<), Mayor o Igual (>=), Menor o Igual (<=).\par
+AND (&&), OR (||), NOT (!). Not invierte el valor (ope\par
+radores l\'f3gicos).\par
+Concatenaci\'f3n (+): Sirve para concatenar texto o variables.\par
+\par
+Condicionales:\par
+\par
+- If\par
+- If else\par
+- If else if\par
+- If anidados\par
+- Switch\par
+\par
+Ejemplo de if else if:\par
+\par
+if (pasa esto) \{\par
+       hace esto\par
+\} else if (pasa esto) \{\par
+      hace esto\par
+\} else \{\par
+    hace esto\par
+\}\par
+
+\pard\sl240\slmult1\f2\par
+Ejemplo de switch:\par
+\par
+switch(diaSemana) \{\par
+\par
+   case "lunes":\par
+       document.write("Hoy es Lunes")\par
+       break\par
+   case "martes" :\par
+        document.write("Hoy es Martes")\par
+        break\par
+   case "miercoles" :\par
+        document.write("Hoy es Mi\'e9rcoles")\par
+        break\par
+   default:\par
+        document.write("No es ninguno de esos d\'edas")\par
+\}\par
+\par
+Si tenemos mas de 3 opciones es recomendable usar switch en vez de if.\par
+\par
+.toLowerCase(): para pasar cualquier string a minuscula. (solo funciona con string!! no sobre otras funciones).\par
+\par
+(alt + arriba \'f3 alt + abajo: para subir o bajar el contenido de una l\'ednea)\par
+\par
+&& tiene mas poder que ||\par
+\par
+\b Clase 03 20/11/2018\par
+\par
+
+\pard\nowidctlpar\sl276\slmult1\b0\f0 Git y GitHub\par
+\par
+Git: Es un Sistema de control de versiones. Se usa de forma local en nuestra pc por consola. Hay mas pero este es el mas utilizdo.\par
+\par
+GitHub: es un servicio de alojamiento de repositorios. es una web donde se puede compartir el codigo de nuestro proyecto con todos los cambios que guardo Git.\par
+\par
+Otra plataforma es BitBucket.\par
+\par
+Para verificar versiones, cambiar nombre de usuario y correo electronico se usan los siguientes comandos:\par
+\par
+\cf1\f3\fs18 LISBALDY@DESKTOP-LOSRLP7 \cf2 MINGW64 \cf3 ~\par
+\cf0 $ git --version\par
+git version 2.19.0.windows.1\par
+\par
+\cf1 LISBALDY@DESKTOP-LOSRLP7 \cf2 MINGW64 \cf3 ~\par
+\cf0 $ git config --global user.name "Lisbaldy"\par
+\par
+\cf1 LISBALDY@DESKTOP-LOSRLP7 \cf2 MINGW64 \cf3 ~\par
+\cf0 $ git config --global user.email "lisba7474@gmail.com"\par
+\par
+\cf1 LISBALDY@DESKTOP-LOSRLP7 \cf2 MINGW64 \cf3 ~\par
+\cf0 $\par
+\f0\fs22\par
+Se maneja la consola con 3 comandos\par
+\par
+cd : entrar a una carpeta\par
+cd .. : salir de una carpeta\par
+dir (windows) - ls (mac/linux) : Ver directorios\par
+clear : limpiar la consola\par
+\par
+Click derecho en la carpeta que deseamos sea nuestro repositorio y dar click derecho y dar al boton git bash \'f3 en mac se arrastra la carpeta a la consola.\par
+\par
+( git init ): para crear un repositorio. S\'f3lo se hace una sola vez por proyecto.\par
+( git status ): nos da el status de nuestro repositorio.\par
+( git add . ): para guardar todos los cambios de todos los archivos en nuestro repositorio.\par
+( git commit -m "mensaje descriptivo" ): Se utiliza cuando queremos crear una version de nuestro proyecto.\par
+\par
+( git remote add [nombre-remoto] [link] ): Vincular repositorio local con repositorio remoto.\par
+( git push -u [nombre-remoto] [rama] ): Subir los archivos locales al repositorio remoto.\par
+\par
+( git clone [link del repositorio a clonar] ) : Para clonar un repositorio remoto y aportar archivos.\par
+\par
+( git commit --amend ): Para reescribir el commit anterior (si se olvido agregar alg\'fan archivo o error en el msj del commit).\par
+\par
+( git checkout -- [nombre de arichivo] ): Revertir c\'f3digo escrito (no funciona despues de un git add)\par
+\par
+( git pull [nombre-remoto] [rama] ) : Es un git fetch y git merge juntos.\par
+\par
+( git fetch [nombre-remoto] ) : Para recuperar todos los datos del proyecto remoto que no tenga todav\'eda. \par
+\par
+( git merge []) : Para mezclar los archivos del repositorio remoto con el repositorio local.\par
+\par
+\lang11274 ( \f4\lang10 git remote -v\f0\lang11274  )\f4\lang10 : Para ver remotos existentes.\par
+\f0\lang11274\par
+( \f4\lang10 git remote rename [old] [new]\f0\lang11274  ): Cambiar el nombre-remoto del repositorio.\f4\lang10\par
+\f0\lang11274\par
+( \f4\lang10 git remote set-url [name] [new-link]\f0\lang11274  )\f4\lang10 : Cambiar a nuevo GitHub reposito\f0\lang11274 rio.\lang10\par
+
+\pard\nowidctlpar\ri-22\sl276\slmult1\par
+
+\pard\nowidctlpar\sl276\slmult1 ( git log ) : Para ver el historial de commits del repositorio.\par
+\par
+( git reset HEAD [archivo] ): para sacar un archivo del \'e1rea de preparaci\'f3n (no entra en el commit).\par
+\par
+( git reflog show ): Para mostrar el historial de head antes de hacer un pull.\par
+\par
+( git reset --hard HEAD~1 ): Para deshacer un commit borrando todos los cambios hechos en el.\par
+
+\pard\nowidctlpar\ri-22\sl276\slmult1\tx9088\tx9230\par
+
+\pard\nowidctlpar\ri-448\sl276\slmult1\tx9088 ( git reset HEAD~1 ): Para deshacer el commit anterior y volver al estado antes del commit manteniendo las modificaciones hechas en el.\par
+
+\pard\nowidctlpar\sl276\slmult1\par
+( git reset --keep HEAD@\{1\} ): para volver al ultimo estado de head antes de hacer un pull.\par
+\par
+Ignorar archivos: Se crea un archivo llamado .gitignore y adentro se mencionan todos los archivos y carpetas que deseo que git ignore (*.a) (/folder).\par
+\par
+Escribir: Si aparece el editor de texto bin en la terminar de git presiono i para insertar texto y :wq para aplicar el cambio ("w" de write y "q" de quit).\par
+
+\pard\sl240\slmult1\f2\par
+En git al usar push por primera vez se usa "-u" que significa upstring, se usa solo la primera vez que hacemos push a un repositorio creado. Es decirle al sistema que estaremos subiendo todos los bytes necesarios para vincular ambos repositorios, el local y el remoto.\par
+\par
+( git add . ) == ( git add --all )\par
+\par
+En caso de que dos personas esten modificando un mismo archivo se genera un conflicto, se combinaran dos archivos, debemos solucionar el conflicto haciendo un git pull para traer los cambios y los veremos en nuestro archivo ligados.\par
+\par
+Ciclos e iteraciones:\par
+\par
+for: Para cuando sabemos que medimos algo finito (con un final) (no siempre es para un array y no siempre es i++, tambien puede ser por ejemplo: "i+10" o "i+2" seg\'fan se requiera.)\par
+while: Para cuando no sabemos cual ser\'e1 el fin\par
+Do while: Para que entre al menos una vez\par
+\par
+condicion ternaria:\par
+\par
+( ? ) : si xxxx es diferente de Null, undefined, y de vac\'edo\par
+( : ) : entonces\par
+\par
+( firstName ? firstName : "" ) : Si firstName es diferente de null, undefined y vacio entonces sera vac\'edo. Si firstName != "" && fisrtName !=  Undefined && firstName != null entonces firstName = "".\par
+\par
+(X += Y) = (X = X + Y)\par
+(X *= Y) = (X = X * Y)\par
+(X **= Y) = (X = X ** Y) \par
+(2 **= 4) = [(2 a la 4) 2 * 2 * 2 * 2 = 16]\par
+\par
+\par
+\b Clase 04 - 22/11/2018\par
+\b0\par
+Funciones: lleva nombre, paramentro y codigo a ejecutar\par
+\par
+metodo ".push" es para agregar un elemento a un array, existente ".pop" es para sacarlo.\par
+\par
+Los parentesis de una funcion significan "ejecutate"\par
+\par
+Arrowfunctions: Es una manera de escribir una function. Tiene ciertas limitaciones. \par
+function (parametro1) \{var saludo = 'hi!'\} === (parametro1 => var saludo = 'hi!')\par
+\par
+\b Clase 05 - 27/11/2018\par
+\b0\par
+\b Objetos\b0\par
+\par
+Funcion constructora o clase es la "carcaza" para construir nuevos objetos.\par
+\par
+this. hacemos global un valor para que exista afuera de la funcion constructora o clase.\par
+\b\par
+Propiedades:\b0  propiedades que adquiere el objeto, ejemp: nombre, edad, color, alto, ancho.\par
+\b\par
+M\'e9todos:\b0  es el comportamiento del objeto, acciones, ejemp: mostrar una propiedad, etc.\par
+\par
+Dos sintaxis, la segunda es a partir de ES6 y es mas parecida a otros lenguajes como Java o .net.\par
+\par
+("let" es igual a "var").\par
+\par
+\b clase 06 - 29/11/2018\par
+\b0\par
+Metodos de Javascript para trabajar strings y arrays:\par
+\par
+Metodos strings:\par
+\par
+.typeof(): sirve para comparar el tipo de dato de una variable. Parametro: variable. Los parentesis son opcionales, puede ir el typeof y al lado la variable a comparar.\par
+.forEach(): es un ciclo for para recorrer un array. Parametro: otra funcion con una variable array como parametro, y la accion a cumplir por cada elemento de ese array.\par
+.includes(): me devuelve un boolean true o false si encuentra una palabra. parametro: palabra a buscar.\par
+.replace(): cambia una palabra por otra. parametro: palabra a reemplazar y palabra que reemplaza.\par
+.indexOf(): sirve para saber la posicion de un string dentro de un string mas largo (buscar coincidencias). (palabra dentro de una frase o letra dentro de una palabra). Parametro: Porcion de string a buscar.\par
+.split(): sirve para separar digitos por un signo separador. (ayuda a convertir un string de n\'fameros a un array). Parametro: Simbolo separador entre comillas.\b\par
+\b0\par
+M\'e9todos arrays:\par
+\par
+.push(): sirve para agregar elementos a un array. parametro: variable a agregar.\par
+.pop(): saca el ultimo elemento del array y me lo devuelve. parametro: variable a sacar.\par
+.join(): para convertir un array a un string separado por el caracter que pase como parametro.\par
+.slice(): como .pop() pero yo elijo que elementos sacar. parametro: primer parametro desde donde empezar a conservar y segundo parametro indica la cantidad de elementos que va a conservar contando desde el inicio del array (empieza a contar desde 1).\par
+.filter(): filtra elementos de un array. Devuelve los elementos que cumplan con la condicion que le pase como paramentro (tambien recorre array). Parametro: variable creada que guarda todos los index (array[index]) y luego entre llaves pasar la condicion para saber con que index se quedar\'e1 el colador.(siempre devuelve un array aunque sea de un solo elemento).\par
+\par
+Spread operator: Combinar dos arrays dentro de un array mayor. desambigua los elementos de cada array. ejemp: var = [...array1, ...array2] \par
+\par
+\par
+\b Clase 07 - 04/12/2018\par
+\b0\par
+JSON (JS Object Notations): requiere que la propiedad o key est\'e9 entre comillas como un string. Puede tener elementos y subelementos. Es el lenguaje para comunicar el frontEnd con el backEnd.\par
+\par
+JSON.parse(objeto JavaScript) para convertir un json (formato string) a objeto de javaScript\par
+Json.stringify(json) para convertir un objeto de Javascript a un json (formato string)\par
+\par
+Storage: sirve para guardar datos de variables dentro del navegador (arrays, strings, etc). \par
+\par
+LocalStorage: Se mantiene aunque cerremos el navegador\par
+SesionStorage: Se mantiene solo una vez por pesta\'f1a, al cambiar pesta\'f1a muere.\par
+\par
+Se agregan items con setItems y se accede a items con getItems.\par
+\par
+Para guardar un item en el local storage: localStorage.setItem('Key', value)\par
+Para acceder un item en el local storage: localStorage.getItem('Key')\par
+\par
+Para borrar los datos de manera individual: sessionStorage.remove("nombreDeItem")\par
+Para borrar los datos en total: sessionStorage.clear("nombreDeItem")\par
+\par
+\b Clase 08 - 06/12/2018\par
+\b0\par
+Si colocamos un if as\'ed: \par
+"if (studentList) \{\}" // si studentList es true (diferente de null, undefined, vac\'edo). \par
+"if (!studenList) \{\}" // si studentList no existe (Igual a null o undefined o vacio)\par
+\par
+Debugear, colocamos un beakpoint en la linea que queramos.\par
+\par
+\b Document Object Model (DOM):\par
+\b0\par
+Todo el html con sus nodos.\par
+\par
+se usa text.content para mostrar el contenido dentro de un div o lista, de lo contrario me lo mostraria como un objeto.\par
+\par
+appendChild() para agregar hijos a una etiqueta\par
+removeChild() para eliminar hijos a una etiqueta\par
+\par
+\b Clase 09 - 11/12/2018\par
+\b0\par
+Eventos:\par
+\par
+Existen dos maneras:\par
+\par
+La primera es colocar el evento y la funcion a cumplir dentro del HTML: \par
+ejemp: <input onclick="agregarPais()" />\par
+\par
+La segunda forma es: Desde JS llamar el elemento por su id, guardarlo en una variable y luego agregarle el evento con la funcion sin parentesis.\par
+\par
+var botonAgregarPais = document.getElementById("btnAgregarPais")\par
+botonagregarPais.onclick = agregarPais\par
+\par
+Al colocar un return dentro de una funcion el resto de la funcion abajo no se cumple, es inalcanzable ya que la funcion llega hasta el return (return solo es igual a return false).\par
+\par
+onclick="" al hacer click en el elemento\par
+onblur="" al perder el foco del elemento\par
+\par
+Para agregar clases y no pisar las clases anteriores .className = += " class-is-invalid"\par
+\par
+para que una misma funcion se cumpla en varios objetos con varios id podemos pasar como parametro un string template llamando la etiqueta y su id (input.id)\par
+\par
+Puedo acceder a un valor de option con el id del select y automaticamente el select adquiere el value del option elegido.\par
+\par
+\b Clase 12 - 20/12/2018\par
+\b0\par
+Jquery\par
+\par
+Para acceder por id y clase es igual a css, pero por nombre es $("[name=valorName]").val()\par
+\par
+.prop() devuelve el valor de la propiedad que pasamos por parametro, y si pasamos un segundo parametro pasara a ser el nuevo valor de la propiedad que pasamos como primer parametro. Ejem: .prop("class", "clase_uno").\par
+\par
+\b Clase 13 - 27/12/2018\par
+\b0\par
+Instalar script llamado Jquery Selector Snippets en Visual Studio code para ve todos los metodos de Jquery.\par
+\par
+codigo ascii para encontrar el nro corespondiente a cada tecla, ejemplo el 13 es enter.\par
+\par
+.remove: para remover elementos\par
+.addClass: para agega una clase\par
+.removeClass: para remover clases\par
+.append: para agrega un hijo a un elemento\par
+.parent: para acceder al elemento padre del selector\par
+.next: para hacer cambios al elemnto debajo del seleccionado o del clickeado.\par
+.css("popiedad", "valor"): para modificar estilos css\par
+\par
+$(`<li class="add" onclick="function()">$\{variable\}</li>`): para agregar html (lo guardamos en una variable para usarla en el append luego)\par
+\par
+(selector).on("click", function ()\{\}) para que se pueda utiliza la funcion incluso si asigno el evento al click de manera dinamica mas adelante.\par
+\par
+.one("click") para que solo sea al presiona una sola vez\par
+\par
+event.which == 13 para hacer una accion con la tecla enter que se representa con el Nro 13.\par
+\par
+\b Clase 14 - 03/01/2019\par
+\b0\par
+.appendto: Es como append pero invertido.\par
+.children para afectar a los hijos del selector. Por ejemplo: (#container).children().css(color, blue).\par
+(#container).children(.classThis).css(color, blue): esto solo modifica los hijos con clase classThis.\par
+\par
+Para pasar varios estilos de css se maneja como un objeto json, ser\'eda:\par
+.css(\{"color": "blue", "font-size": "30px"\})\par
+\par
+.closest() para buscar el elemento ingresado como parametro mas cercano al selector ingresado.\par
+\par
+.first() para buscar el primer elemento buscado de un contenedor. ejemplo:\par
+("span").first().css("color", "blue")\par
+.last() igual que first pero para el ultimo elemento de un contenedor.\par
+.get(0) para obtener el elemento que corresponde al nro pasado como paramentro hijo del selector.\par
+\par
+Efectos:\par
+\par
+Las funciones de efectos siempre tienen como parametro el tiempo en milisegundos y una funcion de callback que lleva el c\'f3digo que se ejecutar\'e1.\par
+\par
+.hide() para ocultar elementos. si pasamos un valor numerico como parametro tardara esa cantidad de segundos en ocultarse (milisegundos).\par
+\par
+.show() lo contrario a hide. Se puede pasar una funcion de callback: .show(3000, function()\{console.log('apareci\'f3!')\} ): aparecera en 3 segundos y escribira en consola "apareci\'f3!".\par
+\par
+.fadeOut() hace aparecer elementos, primero hace un opacity descendiente hasta llegar a 0 y cambia display none.\par
+\par
+.fadeIn() lo contrario a fadeOut.\par
+\par
+.slideDown() como fadeIn pero aparece como lista hacia abajo\par
+.slideUp() como fadeOt pero se oculta como lista hacia arriba\par
+\par
+.delay() para dar demora a los efectos.\par
+\par
+atento a las funciones de callback, no todos lo permiten.\par
+\par
+event.target.id para acceder al id del elemento que recibio un evento.\par
+\par
+\b Clase 15 - 8/01/2018\par
+\par
+\b0 $.ajax(\{\}) sintaxis de ajax para traer datos desde una base de datos.\b\par
+\b0\par
+variable.done(function (data)\{console.log("hola!")\}) que hacer con los datos obtenidos cuando el get es exitoso.\par
+variable.fail(function (error)\{\}) se muestre en consola de donde viene el error y que tipo de error es cuando falla el get.\par
+\par
+el parametro data ya es un array js parseado. Lo podemos recorrer con un ciclo como una variable.\par
+\par
+Metodos:\par
+\par
+post para agregar\par
+put para pisar\par
+delete para borrar\par
+get para obtener\par
+\par
+Al agregar datos se usa post y se usa el atributo data: \{\} y pasamos los datos como objeto.\par
+Siempre en post y put se requiere el atributo data usado en el backend para mantener la sincronizacion, de lo contrario no funcionara.\par
+\par
+escribir en la terminal node server.js para levantar el servidor\par
+\par
+\b Clase 16 - 10/01/2019\par
+\b0\par
+carpeta public y src\par
+En el package.json iran todas las dependencias que iremos utilizando\par
+\par
+abrir la terminal y correr el comando: npm init -y\par
+npm start: para el frontend\par
+npm run server: para levantar servidor local\par
+\par
+Ahora agregar cada dependencia:\par
+\par
+para crear submenues:\par
+\par
+crear el .html dentro de la carpeta partials donde ira el codigo html\par
+agregar el archivo controller.js donde ira el codigo js y exportarlo\par
+agregar la ruta dentro del archivo routers.js e importarlo\ul\par
+\par
+\ulnone Dentro de index.html meter un header dentro del div con id root.\par
+\par
+\par
+}
+ 
